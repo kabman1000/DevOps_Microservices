@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+<[![CircleCI](https://dl.circleci.com/status-badge/img/gh/kabman1000/DevOps_Microservices/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/kabman1000/DevOps_Microservices/tree/master)>
 
 ## Project Overview
 
@@ -48,3 +48,12 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+app.py - The app.py file is the main python file that is run to return a predicted value.
+Dockerfile - The docker file is used to assemble the docker image
+make_prediction.sh - A bash script used to make a prediction.
+Makefile - The makefile is used to install requirements and perform lints.
+requirements.txt - Contains all dependencies to the installed
+run_docker.sh - A bash script used to build docker images and run containers.
+run_kubernetes.sh - A bash script used to run docker containers with kubernetes.
+upload_docker.sh - A bash script used to push docker images to dockerhub.

@@ -41,6 +41,7 @@ jobs:
       - run:
           name: run lint
           command: |
+            cd project-ml-microservice-kubernetes
             source ~/.devops/bin/activate
             make lint 
             
